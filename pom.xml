@@ -45,6 +45,16 @@
         <version>3.11.0</version>
       </plugin>
 
+       <!-- Maven Exec Plugin -->
+       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+            <mainClass>uk.ac.keele.csc20004.Practical1</mainClass>
+        </configuration>
+    </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
