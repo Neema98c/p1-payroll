@@ -10,7 +10,8 @@
   <version>1.0</version>
   <name>Payroll</name>
   <description>Using legacy code for managing employees on a payroll.</description>
-
+  <url>https://github.com/csc20004-2024/p1-payroll.git</url>
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
@@ -34,7 +35,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-install-plugin</artifactId>
-        <version>3.1.1</version> 
+        <version>3.1.1</version>
       </plugin>
 
       <!-- Maven Compiler Plugin -->
@@ -65,4 +66,25 @@
 
     </plugins>
   </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.5.0</version> <!-- Specify the version here -->
+        <!-- Additional configuration can go here if needed -->
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.6.2</version>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <!-- Include dependencies' Javadoc -->
+          <includeDependencySources>true</includeDependencySources>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>
