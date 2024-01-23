@@ -42,7 +42,7 @@ public class MinimumWageEmployee extends HourlyEmployee {
     }
 
     /**
-     * Not that this method is not an overriden version of the methdd in the parent
+     * Note that this method is not an overriden version of the methdd in the parent
      * class.
      * Rather, it overloads the original method, to allow to set the wage based on
      * the age
