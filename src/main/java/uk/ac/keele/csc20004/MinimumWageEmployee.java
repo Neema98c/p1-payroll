@@ -74,7 +74,7 @@ public class MinimumWageEmployee extends HourlyEmployee {
         if (age < 18) {
             throw new IllegalArgumentException("Age must be greater than 18");
         }
-        this.setAge(age);
+        this.setWage(age);
     }
 
     /**
