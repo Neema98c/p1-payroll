@@ -59,15 +59,28 @@ public class Practical1 {
 
         // Now try to add a new employee, using the new class you created
 
+        Employee e5 = 
+        new MinimumWageEmployee("BOB", 
+        "bobbington", 
+        "abc-dede-beb",
+        21, 30);
+        employees.add(e5);
+
         // print all employees
         // this will use the toString() method of the Employee class (or its subclasses)
-        for (Employee employee : employees) {
-            System.out.println(employee);            
-        }
+        
+        //for (Employee employee : employees) {
+        //  System.out.println(employee);            
+        //}
 
         // Now, try to use a different data structure to hold the employees
         // Add all previous objects to the new data structure and print them
 
+        
+
         // TO DO: add your code here
+        for (Employee employee : employees) {
+            System.out.println(employee);            
+        }
     }
 }

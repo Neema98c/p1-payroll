@@ -57,8 +57,16 @@ public class MinimumWageEmployee extends HourlyEmployee {
             throw new IllegalArgumentException("Age must be greater than 18");
         }
         double wage = 0.0;
-        
-        // TODO: compute the wage as per requirements (based on the age)
+
+        if (age > 18 && age <= 20){
+            wage = 7.49;
+        }
+        else if(age>20 && age <= 22) {
+            wage = 10.18;
+        }
+        else {
+            wage = 10.42;
+        }
         super.setWage(wage);
     }
 
