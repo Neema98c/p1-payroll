@@ -7,7 +7,9 @@
  * **********************/
 package uk.ac.keele.csc20004;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
+import java.util.Stack;
+import java.
 
 import uk.ac.keele.csc20004.legacy.CommissionEmployee;
 import uk.ac.keele.csc20004.legacy.Employee;
@@ -21,7 +23,7 @@ import uk.ac.keele.csc20004.legacy.SalariedEmployee;
 public class Practical1 {
     public static void main(String[] args) {
         // A data structure to hold employees
-        ArrayList<Employee> employees = new ArrayList<Employee>();
+        Stack<Employee> employees = new Stack<>();
 
         // Adding a couple of employes, with different types of contracts
 
@@ -31,7 +33,7 @@ public class Practical1 {
             "Ortolani", 
             "123-4567-999", 
             1000, 0.7);
-        employees.add(e1);
+        employees.push(e1);
 
         // An hourly employee
         Employee e2 = 
@@ -39,7 +41,7 @@ public class Practical1 {
             "Doe", 
             "111-2222-333", 
             800, 18);
-        employees.add(e2);
+        employees.push(e2);
 
         // A salaried employee
         Employee e3 = 
@@ -47,7 +49,7 @@ public class Practical1 {
             "He", 
             "999-8888-777", 
             1200.00);
-        employees.add(e3);
+        employees.push(e3);
 
         // A salaried employee
         Employee e4 = 
@@ -55,7 +57,7 @@ public class Practical1 {
             "Al-Mansoori", 
             "ABC-DEFG-HIJ", 
             22, 40);
-        employees.add(e4);
+        employees.push(e4);
 
         // Now try to add a new employee, using the new class you created
 
@@ -64,7 +66,7 @@ public class Practical1 {
         "bobbington", 
         "abc-dede-beb",
         21, 30);
-        employees.add(e5);
+        employees.push(e5);
 
         // print all employees
         // this will use the toString() method of the Employee class (or its subclasses)
@@ -76,11 +78,11 @@ public class Practical1 {
         // Now, try to use a different data structure to hold the employees
         // Add all previous objects to the new data structure and print them
 
-        
+        for (Employee employee : employees){
+            System.out.println(employee);
+        }
 
         // TO DO: add your code here
-        for (Employee employee : employees) {
-            System.out.println(employee);            
-        }
+
     }
 }
